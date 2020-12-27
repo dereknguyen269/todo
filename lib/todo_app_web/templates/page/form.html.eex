@@ -1,0 +1,6 @@
+<%= form_for @changeset, @action, [as: :task, id: 'myForm'], fn f-> %>
+  <%= text_input f, :name, placeholder: "Title", class: "form-control", id: 'myInput' %>
+  <%= select f, :status, [{'Backlog', 1}, {'Todo', 2}, { 'Working', 3 }, {'Done', 4}] %>
+  <%= textarea f, :description, rows: 12, placeholder: "Content", class: "form-control " %>
+  <%= submit "Submit", class: "btn btn-primary float-right", onclick: 'newElement(event)' %>
+<% end %>

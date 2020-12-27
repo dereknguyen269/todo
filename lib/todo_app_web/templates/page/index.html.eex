@@ -1,0 +1,16 @@
+<section class="phx-hero">
+  <h1><%= gettext "Welcome to %{name}!", name: "My TODO" %></h1>
+  <div id="myDIV" class="header">
+    <%= render "form.html", 
+      conn: @conn, 
+      action: Routes.task_path(@conn, :create),
+      changeset: @changeset
+    %>
+
+  </div>
+  <ul id="myUL">
+    <%= for task <- @tasks do %>
+      <li data-id="<%= task.id %>" class="<%= if task.status == 4, do: 'checked', else: '' %>"><%= task.name %></li>
+    <% end %>
+  </ul>
+</section>
