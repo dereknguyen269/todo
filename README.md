@@ -1,4 +1,4 @@
-<code><img src="/demo/demo.png"></code>
+<code><img src="/demo/home.png"></code>
 
 # TodoApp
 
