@@ -1,3 +1,5 @@
+<code><img height="30" src="/demo/demo.png"></code>
+
 # TodoApp
 
 To start your Phoenix server:
