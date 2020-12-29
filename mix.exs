@@ -46,6 +46,7 @@ defmodule TodoApp.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:cors_plug, "~> 2.0"},
+      {:ecto_sort, "~> 0.0.1"},
     ]
   end
 

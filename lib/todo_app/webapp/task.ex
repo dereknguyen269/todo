@@ -14,6 +14,6 @@ defmodule TodoApp.Webapp.Task do
   def changeset(task, attrs) do
     task
     |> cast(attrs, [:name, :description, :status])
-    |> validate_required([:name, :description, :status])
+    |> validate_required([:name, :status])
   end
 end
